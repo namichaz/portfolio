@@ -24,7 +24,7 @@
     <body>
         <section>
             <div class="sidebar">
-                    <h2>サポートページ</h2>
+                    <h2>Menu</h2>
                     <div class="submenu">
                         <h3>1. 初めて使うとき</h3>
                         <ul class="hidden">
@@ -44,5 +44,15 @@
                     </div>
             </div>
         </section>
+        <script src="../scripts/jquery-3.6.3.min.js"></script>
+        <script>
+            'use strict'
+
+            $(document).ready(function(){
+                $('.submenu h3').on('click',function(){
+                    $(this).next().toggleClass('hidden');
+                });
+            });
+        </script>
     </body>
 </html>
