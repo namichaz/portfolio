@@ -1,0 +1,106 @@
+/* スライドする文字 */
+h1 {
+    color: #06080fbc;
+    font-size: 90px;
+    font-weight: bold;
+    overflow: hidden;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  h1:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    transition: 0.4s;
+  }
+  h1 span {
+    display: inline-block;
+    margin-left: -100%;
+    transition: 0.4s;
+    transition-delay: 0.4s;
+  }
+  h1.slide_on::before {
+    left: 0;
+  }
+  h1.slide_on span {
+    margin-left: 0;
+  }
+
+/* ナビゲータ */
+nav{
+    text-align: center;
+    }
+nav ul{
+    margin: 0 ;
+    padding: 0 ;
+    }
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    min-width: 90px;
+    }
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    }
+nav ul li.current a{
+    color: #F33135;
+    }
+nav ul li a:hover{
+    color: #89c0db;
+    }
+
+/* ぬるりと現れる */
+.matrix .bg-wrap,
+.matrix .bg-wrap .inn {
+    display: block;
+    }
+    
+.matrix .bg-wrap {
+    overflow: hidden;
+    opacity: 0;
+    }
+    
+    .matrix .bg-wrap + .bg-wrap {
+    margin-top: 10px;
+    }
+    
+.matrix .bg-wrap .inn.large {
+    font-size: 36px;
+    font-weight: bold;
+    }
+.matrix .bg-wrap .inn.small {
+    font-size: 15px;
+    }
+    
+.matrix .bg-wrap .inn {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 100);
+    transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    
+.matrix.is-animated .bg-wrap {
+    opacity: 1;
+    }
+    
+.matrix.is-animated .bg-wrap .inn {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+/* 画像をふわっと */
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 300ms;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}

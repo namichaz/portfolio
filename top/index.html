@@ -4,55 +4,28 @@
         <meta charset="UTF-8">
         <title>Portfolio</title>
         <meta name="description" content="ポートフォリオの練習用サイトです">
-        <style>
-            .submenu h3{
-                margin: 0 0 lem 0;
-                font-size: 16px;
-                cursor: pointer;
-                color: #5e78c1;
-            }
-            .submenu ul{
-                margin: 0 0 lem 0;
-                list-style-type: none;
-                font-size: 14px;
-            }
-            .hidden {
-                display: none;
-            }
-        </style>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css" >
     </head>
     <body>
-        <section>
-            <div class="sidebar">
-                    <h2>Menu</h2>
-                    <div class="submenu">
-                        <h3>1. 初めて使うとき</h3>
-                        <ul class="hidden">
-                            <li><a href="">- 概要</a></li>
-                            <li><a href="">- インストールする</a></li>
-                            <li><a href="">- アカウントを登録する</a></li>
-                            <li><a href="">- アンインストールする</a></li>
-                        </ul>
-                    </div>
-                    <div class="submenu">
-                        <h3>2. 基本的な使い方</h3>
-                        <ul class="hidden">
-                            <li><a href="">- 基本的な操作方法</a></li>
-                            <li><a href="">- 元の状態に復元する</a></li>
-                            <li><a href="">- 機能拡張プラグインを追加する</a></li>
-                        </ul>
-                    </div>
-            </div>
-        </section>
-        <script src="../scripts/jquery-3.6.3.min.js"></script>
-        <script>
-            'use strict'
-
-            $(document).ready(function(){
-                $('.submenu h3').on('click',function(){
-                    $(this).next().toggleClass('hidden');
-                });
-            });
-        </script>
+        <script src="../scripts/slide.js"></script>
+        <nav>
+            <ul>
+            <li class=”current”><a href=”#”>Home</a></li>
+            <li><a href=”#”>About</a></li>
+            <li><a href=”#”>History</a></li>
+            <li><a href=”#”>Hobby</a></li>
+            <li><a href=”#”>etc</a></li>
+            </ul>
+            </nav>
+        <h1><span>Portfolio</span></h1>
+        <br>
+        <br>
+        <div class="matrix anim">
+            <span class="bg-wrap"><span class="inn large">並川達也</span></span>
+            <span class="bg-wrap"><span class="inn small">大阪府堺市出身<br>サンプルテキストサンプルテキストサンプルテキスト</span></span>
+        </div>
+        <p class="fadein"><img src="../images/bushwick.jpeg" alt=""></p>
     </body>
 </html>
