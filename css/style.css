@@ -1,6 +1,6 @@
 /* スライドする文字 */
 h1 {
-    color: #06080fbc;
+    color: #fcfcfcbc;
     font-size: 90px;
     font-weight: bold;
     overflow: hidden;
@@ -53,46 +53,46 @@ nav ul li.current a{
     color: #F33135;
     }
 nav ul li a:hover{
-    color: #89c0db;
+    color: #bec35a;
     }
 
 /* ぬるりと現れる */
 .matrix .bg-wrap,
 .matrix .bg-wrap .inn {
-    display: block;
-    }
-    
+  display: block;
+}
+ 
 .matrix .bg-wrap {
-    overflow: hidden;
-    opacity: 0;
-    }
-    
-    .matrix .bg-wrap + .bg-wrap {
-    margin-top: 10px;
-    }
-    
+  overflow: hidden;
+  opacity: 0;
+}
+ 
+.matrix .bg-wrap + .bg-wrap {
+  margin-top: 10px;
+}
+ 
 .matrix .bg-wrap .inn.large {
-    font-size: 36px;
-    font-weight: bold;
-    }
+  font-size: 36px;
+  font-weight: bold;
+}
 .matrix .bg-wrap .inn.small {
-    font-size: 15px;
-    }
-    
+  font-size: 15px;
+}
+ 
 .matrix .bg-wrap .inn {
-    opacity: 0;
-    transform: matrix(1, 0, 0, 1, 0, 100);
-    transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-    
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 100);
+  transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+ 
 .matrix.is-animated .bg-wrap {
-    opacity: 1;
-    }
-    
+  opacity: 1;
+}
+ 
 .matrix.is-animated .bg-wrap .inn {
-    opacity: 1;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    }
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
 
 /* 画像をふわっと */
 .fadein {
@@ -103,4 +103,11 @@ nav ul li a:hover{
 .fadein.scrollin {
     opacity : 1;
     transform : translate(0, 0);
+    width : 10;
+    height : 10;
 }
+
+/* 背景色の設定 */
+body {
+    background-color:#8c8c89f8;
+  }
