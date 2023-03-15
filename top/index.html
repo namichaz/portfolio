@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio</title>
+        <title id="Home">Portfolio</title>
         <meta name="description" content="ポートフォリオの練習用サイトです">
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
@@ -23,10 +23,25 @@
         <h1><span>Portfolio</span></h1>
         <br>
         <br>
-        <div class="matrix anim">
-            <span class="bg-wrap"><span class="inn large">文字がぬるりと現れる</span></span>
-            <span class="bg-wrap"><span class="inn small">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキストサンプルテキスト</span></span>
-        </div>
-        <!-- <p class="fadein"><img src="../images/bushwick.jpeg"></p> -->
+        <div class="flex">
+            <figure class="image"><img src="../images/selfie.jpeg" alt=""></figure>
+            <div class="right">
+              <p class="title">About Me</p>
+              <p class="text">
+                兵庫県西宮市内の病院で生まれる<br>
+                親が転勤族だったので幼い頃より住居を転々とする<br>
+                これまで住んだところは、兵庫→静岡→京都→岡山→大阪→横浜→大阪(イマココ)<br>
+                横浜市内にて20歳から10年間、美容師として活動する<br>
+                過去に<a href="http://area-circuit.jp/2018/index.html">Area Circuit Theme Cut</a>のファイナリストになったことがある<br>
+                30歳になった際、将来を見据え転職を決意<br>
+                新たなステージとして、IT業界を選択し、現在に至る<br>
+                主にフロントエンドやアプリ開発に興味があるので、React、Vueを勉強中
+              </p>
+            </div>
+          </div>
+        
+        <!-- <p class="fadein">
+            <img src="../images/bushwick.jpeg" >
+        </p> -->
     </body>
 </html>
