@@ -2,14 +2,16 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title id="Home">Portfolio</title>
+        <title>Portfolio</title>
         <meta name="description" content="ポートフォリオの練習用サイトです">
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
         <link rel="stylesheet" href="../css/style.css" >
     </head>
-    <body>
+
+
         <script src="../scripts/slide.js"></script>
+        <script src="../scripts/parallax.min.js"></script>
         <div class="area"></div>
         <nav>
             <ul>
@@ -26,7 +28,7 @@
         <div class="flex">
             <figure class="image"><img src="../images/selfie.jpeg" alt=""></figure>
             <div class="right">
-              <p class="title">About Me</p>
+              <p class="title" id="about">About Me</p>
               <p class="text">
                 兵庫県西宮市内の病院で生まれる<br>
                 親が転勤族だったので幼い頃より住居を転々とする<br>
@@ -38,10 +40,9 @@
                 主にフロントエンドやアプリ開発に興味があるので、React、Vueを勉強中
               </p>
             </div>
-          </div>
-        
-        <!-- <p class="fadein">
-            <img src="../images/bushwick.jpeg" >
-        </p> -->
+        </div>
+        <br>
+        <br>
+        <div class="skills" id="skills" data-parallax="scroll" data-image-src="../images/code.jpg"></div>
     </body>
 </html>

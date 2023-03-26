@@ -1,6 +1,8 @@
+
+
 /* スライドする文字 */
 h1 {
-    color: #dfe582bc;
+    color: #f1f6b5bc;
     font-size: 80px;
     font-weight: bold;
     overflow: hidden;
@@ -34,10 +36,10 @@ h1 {
 
 
 .flex {
-    display: flex; /*横並び*/
+    display: flex; 
   }
   .flex .image {
-    width: 350px; /*画像サイズ指定*/
+    width: 350px; 
     margin: 0;
     padding: 0;
   }
@@ -95,7 +97,7 @@ nav ul li.current a{
     color: #F33135;
     }
 nav ul li a:hover{
-    color: #bec35a;
-    }
+    color: #f1f6b5bc;;
+    } 
 
 
